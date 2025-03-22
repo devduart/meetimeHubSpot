@@ -90,15 +90,9 @@ chmod +x build.sh
 ./build.sh
 ```
 
-
 4. Acesse a aplicação em:
 ```
-http://localhost:8080
-```
-
-5. Acesse a documentação Swagger/OpenAPI em:
-```
-http://localhost:8080/swagger-ui.html
+http://localhost:8080/swagger-ui/index.html
 ```
 
 6. Execute os testes com:

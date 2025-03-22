@@ -7,6 +7,6 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - HUBSPOT_CLIENT_ID=your-client-id
-      - HUBSPOT_CLIENT_SECRET=your-client-secret
+      - HUBSPOT_CLIENT_ID=ab2c498f-15c5-4564-bd1a-163651b5cef9
+      - HUBSPOT_CLIENT_SECRET=0c696418-5f2f-4823-9cb5-9a06398b54a7
     restart: unless-stopped
