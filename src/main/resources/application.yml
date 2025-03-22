@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          hubspot:
+            client-id: ${HUBSPOT_CLIENT_ID}
+            client-secret: ${HUBSPOT_CLIENT_SECRET}
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8080/hubspot/callback
+            scope: oauth, crm.objects.contacts.read, crm.objects.contacts.write
+        provider:
+          hubspot:
+            authorization-uri: https://app.hubspot.com/oauth/authorize
+            token-uri: https://api.hubapi.com/oauth/v1/token
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html

@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  hubspot-integration:
+    build: .
+    container_name: hubspot-integration
+    ports:
+      - "8080:8080"
+    environment:
+      - HUBSPOT_CLIENT_ID=your-client-id
+      - HUBSPOT_CLIENT_SECRET=your-client-secret
+    restart: unless-stopped
